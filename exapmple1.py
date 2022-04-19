@@ -11,7 +11,7 @@ from time import sleep
 
 driver = webdriver.Chrome("C:/Users/PRMR/Desktop/skillfactory/my_git/test/chromedriver") 
 driver.get("https://google.com")
-driver.find_element(By.XPATH, "//input[@title=\"Поиск\"]").send_keys('Skillfactory') + Keys.RETURN
+driver.find_element(By.XPATH, "//input[@title=\"Поиск\"]").send_keys('Skillfactory' + Keys.RETURN)
 sleep(3)
 driver.save_screenshot('sf.png')
 driver.quit()
